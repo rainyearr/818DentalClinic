@@ -19,6 +19,20 @@
         app:layout_constraintVertical_bias="0.022" />
 
     <EditText
+        android:id="@+id/patient_name"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Username"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.824"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.188" />
+
+    <EditText
         android:id="@+id/patient_pass"
         android:layout_width="320dp"
         android:layout_height="40dp"
@@ -31,22 +45,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.276" />
-
-    <EditText
-        android:id="@+id/patient_name"
-        android:layout_width="320dp"
-        android:layout_height="40dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-
-        android:hint="Account Name"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.824"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.188" />
 
     <ImageView
         android:id="@+id/patient_pass_logo"
@@ -83,5 +81,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.436"
         android:background="@drawable/login_button" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="136dp"
+        android:layout_height="31dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patient_login"
+        app:layout_constraintVertical_bias="0.011"
+        app:srcCompat="@drawable/create_account" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -18,33 +18,32 @@
         app:layout_constraintVertical_bias="0.022" />
 
     <EditText
-        android:id="@+id/doctor_pass"
+        android:id="@+id/doctor_name"
         android:layout_width="320dp"
         android:layout_height="40dp"
         android:ems="10"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.824"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.276" />
-
-    <EditText
-        android:id="@+id/doctor_name"
-        android:layout_width="320dp"
-        android:layout_height="40dp
-"
-        android:ems="10"
         android:inputType="textPersonName"
-        android:text="Account Name"
-        android:textSize="12sp"
+        android:hint="Username"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.824"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.188" />
+
+    <EditText
+        android:id="@+id/doctor_pass"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Password"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.824"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.276" />
 
     <ImageView
         android:id="@+id/doctor_pass_logo"
