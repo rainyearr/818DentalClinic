@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "623128836344",
+    "firebase_url": "https://scheduling-app-98e66.firebaseio.com",
+    "project_id": "scheduling-app-98e66",
+    "storage_bucket": "scheduling-app-98e66.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:623128836344:android:b20b9b03c09b29a5bee30d",
+        "android_client_info": {
+          "package_name": "com.example.jumactesttwo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "623128836344-hddrrjfqm4ltvfu7eb96cg6blnld7l5q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtOGChp1H_ZOi6SZ03ItKa0RVPUtD44zo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "623128836344-hddrrjfqm4ltvfu7eb96cg6blnld7l5q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

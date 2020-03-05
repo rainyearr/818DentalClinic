@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "253847535292",
+    "firebase_url": "https://dental-clinic-d8fe6.firebaseio.com",
+    "project_id": "dental-clinic-d8fe6",
+    "storage_bucket": "dental-clinic-d8fe6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:253847535292:android:5baac07b64e7cf41a9dab9",
+        "android_client_info": {
+          "package_name": "com.example.a818dentalclinic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "253847535292-hrj9lbh7dadqtrodg6u25e5sqel6p17a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.a818dentalclinic",
+            "certificate_hash": "ac1fe874ea75a12f0d9bf234f1dfb996104f192b"
+          }
+        },
+        {
+          "client_id": "253847535292-ada0ohja5bqvj1oqs25eeest0hnqai32.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC41FBy8VKsO9kVfK_rm2ZX8RmRDlQb3hY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "253847535292-ada0ohja5bqvj1oqs25eeest0hnqai32.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

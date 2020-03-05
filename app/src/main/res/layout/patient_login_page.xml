@@ -23,14 +23,14 @@
         android:layout_width="320dp"
         android:layout_height="40dp"
         android:ems="10"
+        android:hint="email"
         android:inputType="textPersonName"
-        android:hint="Username"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/patient_pass"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.824"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintStart_toEndOf="@+id/patient_name_logo"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.188" />
+        app:layout_constraintVertical_bias="0.741" />
 
     <EditText
         android:id="@+id/patient_pass"
@@ -39,12 +39,12 @@
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/patient_login"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.824"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintStart_toEndOf="@+id/patient_pass_logo"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.276" />
+        app:layout_constraintVertical_bias="0.695" />
 
     <ImageView
         android:id="@+id/patient_pass_logo"
@@ -55,43 +55,55 @@
         app:layout_constraintHorizontal_bias="0.041"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.281"
-        app:srcCompat="@drawable/vector_password"/>
+        app:layout_constraintVertical_bias="0.269"
+        app:srcCompat="@drawable/vector_password" />
 
     <ImageView
         android:id="@+id/patient_name_logo"
         android:layout_width="25dp"
         android:layout_height="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/patient_pass_logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.041"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.195"
+        app:layout_constraintVertical_bias="0.69"
         app:srcCompat="@drawable/vector_account" />
 
     <Button
         android:id="@+id/patient_login"
+        android:layout_width="239dp"
+        android:layout_height="41dp"
+        android:background="@drawable/login_button"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar_patientLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.517" />
+
+    <ImageButton
+        android:id="@+id/patient_create"
+        android:layout_width="216dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar_patientLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patient_login"
+        app:layout_constraintVertical_bias="0.103"
+        app:srcCompat="@drawable/create_account" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_patientLogin"
+        style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.436"
-        android:background="@drawable/login_button" />
-
-    <ImageButton
-        android:id="@+id/patient_create"
-        android:layout_width="136dp"
-        android:layout_height="31dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/patient_login"
-        app:layout_constraintVertical_bias="0.011"
-        app:srcCompat="@drawable/create_account" />
+        app:layout_constraintVertical_bias="0.918" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
