@@ -4,7 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".PatientLoginPage">
 
     <Button
         android:id="@+id/patient_back_button"
@@ -81,7 +82,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.517" />
 
-    <ImageButton
+    <Button
         android:id="@+id/patient_create"
         android:layout_width="216dp"
         android:layout_height="40dp"
@@ -91,7 +92,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/patient_login"
         app:layout_constraintVertical_bias="0.103"
-        app:srcCompat="@drawable/create_account" />
+        android:background="@drawable/create_account" />
 
     <ProgressBar
         android:id="@+id/progressBar_patientLogin"

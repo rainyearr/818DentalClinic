@@ -6,7 +6,6 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -25,7 +24,7 @@ public class PatientLoginPage extends AppCompatActivity {
     EditText email, mPassword;
     Button backButton;
     Button loginButton;
-    ImageButton registerButton;
+    Button registerButton;
     ProgressBar progressBar;
     FirebaseAuth fAuth;
 
@@ -33,25 +32,6 @@ public class PatientLoginPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.patient_login_page);
-
-        backButton = findViewById(R.id.patient_back_button);
-        backButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(PatientLoginPage.this, MainActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        registerButton = findViewById(R.id.patient_create);
-
-        registerButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(PatientLoginPage.this, PatientRegister.class);
-                startActivity(intent);
-            }
-        });
 
         email = findViewById(R.id.patient_name);
         mPassword = findViewById(R.id.patient_pass);
@@ -89,7 +69,7 @@ public class PatientLoginPage extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             Toast.makeText(PatientLoginPage.this, "Logged in Successfully", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(getApplicationContext(), DoctorAppointments.class));
+                            goToAppointments();
                         } else {
                             Toast.makeText(PatientLoginPage.this, "Error ! " + Objects.requireNonNull(task.getException()).getMessage(), Toast.LENGTH_SHORT).show();
                             progressBar.setVisibility(View.GONE);
@@ -98,6 +78,37 @@ public class PatientLoginPage extends AppCompatActivity {
                 });
             }
         });
+
+        registerButton = findViewById(R.id.patient_create);
+
+        registerButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToRegister();
+            }
+        });
+
+        backButton = findViewById(R.id.patient_back_button);
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goBackToMain();
+            }
+        });
     }
 
+    private void goToRegister() {
+        Intent intent = new Intent(this, PatientRegister.class);
+        startActivity(intent);
+    }
+
+    private void goBackToMain() {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    private void goToAppointments() {
+        Intent intent = new Intent(this, DoctorAppointments.class);
+        startActivity(intent);
+    }
 }

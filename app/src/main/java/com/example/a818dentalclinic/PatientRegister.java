@@ -39,6 +39,8 @@ public class PatientRegister extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
         setContentView(R.layout.patient_register);
 
         mFirstName = findViewById(R.id.patient_firstName);
@@ -52,11 +54,6 @@ public class PatientRegister extends AppCompatActivity {
         fStore = FirebaseFirestore.getInstance();
 
         progressBar = findViewById(R.id.progressBar);
-
-        if (fAuth.getCurrentUser() != null) {
-            startActivity(new Intent(getApplicationContext(), MainActivity.class));
-            finish();
-        }
 
         mRegister.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -116,6 +113,7 @@ public class PatientRegister extends AppCompatActivity {
                                 @Override
                                 public void onSuccess(Void aVoid) {
                                     Log.d(TAG, "onSuccess: user Profile is created for " + userID);
+                                    onRegistered();
                                 }
                             }).addOnFailureListener(new OnFailureListener() {
                                 @Override
@@ -123,7 +121,7 @@ public class PatientRegister extends AppCompatActivity {
                                     Log.d(TAG, "onFailure: " + e.toString());
                                 }
                             });
-                            startActivity(new Intent(getApplicationContext(), MainActivity.class));
+
 
                         } else {
                             Toast.makeText(PatientRegister.this, "Error Occured: " + Objects.requireNonNull(task.getException()).getMessage(), Toast.LENGTH_SHORT).show();
@@ -134,7 +132,9 @@ public class PatientRegister extends AppCompatActivity {
 
             }
         });
-
-
+    }
+    private void onRegistered() {
+        Intent intent = new Intent(this, PatientLoginPage.class);
+        startActivity(intent);
     }
 }
