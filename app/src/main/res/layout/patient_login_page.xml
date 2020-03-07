@@ -9,90 +9,70 @@
 
     <Button
         android:id="@+id/patient_back_button"
-        android:layout_width="110dp"
-        android:layout_height="31dp"
-        android:background="@drawable/login_back_button"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:background="@drawable/back_arrow_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.06"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.022" />
+        app:layout_constraintVertical_bias="0.04000002" />
 
     <EditText
         android:id="@+id/patient_name"
-        android:layout_width="320dp"
-        android:layout_height="40dp"
+        android:layout_width="361dp"
+        android:layout_height="100dp"
+        android:background="@drawable/username_textbox"
         android:ems="10"
-        android:hint="email"
+        android:hint="Email"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/patient_pass"
+        android:paddingLeft="70dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.42"
-        app:layout_constraintStart_toEndOf="@+id/patient_name_logo"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.741" />
+        app:layout_constraintVertical_bias="0.45" />
 
     <EditText
         android:id="@+id/patient_pass"
-        android:layout_width="320dp"
-        android:layout_height="40dp"
+        android:layout_width="361dp"
+        android:layout_height="100dp"
+        android:background="@drawable/password_textbox"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/patient_login"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.42"
-        app:layout_constraintStart_toEndOf="@+id/patient_pass_logo"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.695" />
-
-    <ImageView
-        android:id="@+id/patient_pass_logo"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
+        android:paddingLeft="70dp"
+        android:paddingBottom="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.041"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.269"
-        app:srcCompat="@drawable/vector_password" />
-
-    <ImageView
-        android:id="@+id/patient_name_logo"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        app:layout_constraintBottom_toTopOf="@+id/patient_pass_logo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.041"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.69"
-        app:srcCompat="@drawable/vector_account" />
+        app:layout_constraintVertical_bias="0.608" />
 
     <Button
         android:id="@+id/patient_login"
-        android:layout_width="239dp"
-        android:layout_height="41dp"
-        android:background="@drawable/login_button"
+        android:layout_width="361dp"
+        android:layout_height="80dp"
+        android:background="@drawable/login_button_main"
         app:layout_constraintBottom_toTopOf="@+id/progressBar_patientLogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.517" />
+        app:layout_constraintVertical_bias="0.901" />
 
     <Button
         android:id="@+id/patient_create"
-        android:layout_width="216dp"
-        android:layout_height="40dp"
-        app:layout_constraintBottom_toTopOf="@+id/progressBar_patientLogin"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:background="@drawable/create_account"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/patient_login"
-        app:layout_constraintVertical_bias="0.103"
-        android:background="@drawable/create_account" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
 
     <ProgressBar
         android:id="@+id/progressBar_patientLogin"
@@ -105,6 +85,36 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.918" />
+        app:layout_constraintVertical_bias="0.976" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:fontFamily="@font/frijole"
+        android:text="818 Dental Clinic"
+        android:textAlignment="center"
+        android:textColor="#00C43A"
+        android:textSize="45sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.17000002"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Back!"
+        android:textColor="#00C43A"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.309" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
