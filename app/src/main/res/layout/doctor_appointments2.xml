@@ -68,28 +68,28 @@
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="190dp"
-        android:layout_height="89dp"
-        android:background="@drawable/background"
+        android:layout_width="159dp"
+        android:layout_height="40dp"
+        android:background="@drawable/base"
         android:text="In 7 Days"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.13"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.141" />
+        app:layout_constraintVertical_bias="0.16000003" />
 
     <Button
         android:id="@+id/button6"
-        android:layout_width="159dp"
-        android:layout_height="40dp"
-        android:background="@drawable/base"
+        android:layout_width="190dp"
+        android:layout_height="89dp"
+        android:background="@drawable/background"
         android:text="ALL SCHEDULE"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.87"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.162" />
+        app:layout_constraintVertical_bias="0.14999998" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
