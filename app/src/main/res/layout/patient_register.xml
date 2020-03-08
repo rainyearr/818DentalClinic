@@ -7,10 +7,26 @@
     android:layout_height="match_parent"
     tools:context=".PatientRegister">
 
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="352dp"
+        android:layout_height="209dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="11dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003"
+        app:srcCompat="@drawable/create_account_header" />
+
     <EditText
         android:id="@+id/patient_firstName"
-        android:layout_width="361dp"
-        android:layout_height="100dp"
+        android:layout_width="330dp"
+        android:layout_height="90dp"
         android:background="@drawable/name_textbox"
         android:ems="10"
         android:hint="First Name"
@@ -19,14 +35,15 @@
         android:paddingBottom="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.198" />
+        app:layout_constraintVertical_bias="0.252" />
 
     <EditText
         android:id="@+id/patient_LastName"
-        android:layout_width="361dp"
-        android:layout_height="100dp"
+        android:layout_width="330dp"
+        android:layout_height="90dp"
         android:background="@drawable/name_textbox"
         android:ems="10"
         android:hint="Last Name"
@@ -41,8 +58,8 @@
 
     <EditText
         android:id="@+id/patient_userName"
-        android:layout_width="361dp"
-        android:layout_height="100dp"
+        android:layout_width="330dp"
+        android:layout_height="90dp"
         android:background="@drawable/name_textbox"
         android:ems="10"
         android:hint="Username"
@@ -57,8 +74,8 @@
 
     <EditText
         android:id="@+id/patient_email"
-        android:layout_width="361dp"
-        android:layout_height="100dp"
+        android:layout_width="330dp"
+        android:layout_height="90dp"
         android:background="@drawable/email_textbox"
         android:ems="10"
         android:hint="Email"
@@ -73,8 +90,8 @@
 
     <EditText
         android:id="@+id/patient_password"
-        android:layout_width="361dp"
-        android:layout_height="100dp"
+        android:layout_width="330dp"
+        android:layout_height="90dp"
         android:background="@drawable/password_textbox"
         android:ems="10"
         android:hint="Password"
@@ -89,8 +106,8 @@
 
     <Button
         android:id="@+id/patient_register"
-        android:layout_width="361dp"
-        android:layout_height="80dp"
+        android:layout_width="330dp"
+        android:layout_height="70dp"
         android:background="@drawable/register_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -112,5 +129,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/patient_register"
         app:layout_constraintVertical_bias="0.858" />
+
+    <Button
+        android:id="@+id/doctor_back_button"
+        android:layout_width="33dp"
+        android:layout_height="30dp"
+        android:background="@drawable/back_arrow_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04000002" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

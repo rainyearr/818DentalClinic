@@ -35,6 +35,7 @@ public class PatientRegister extends AppCompatActivity {
     Button mRegister;
     ProgressBar progressBar;
     String userID;
+    Button backButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,7 +54,6 @@ public class PatientRegister extends AppCompatActivity {
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
 
-        progressBar = findViewById(R.id.progressBar);
 
         mRegister.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -132,9 +132,13 @@ public class PatientRegister extends AppCompatActivity {
 
             }
         });
+
     }
     private void onRegistered() {
         Intent intent = new Intent(this, PatientLoginPage.class);
         startActivity(intent);
     }
+
+
+
 }
