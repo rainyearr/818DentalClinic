@@ -19,9 +19,10 @@
 
     <Button
         android:id="@+id/welcome_doctor_button"
-        android:layout_width="300dp"
-        android:layout_height="80dp"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
         android:background="@drawable/doctor_button"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.522"
@@ -31,15 +32,16 @@
 
     <Button
         android:id="@+id/welcome_patient_button"
-        android:layout_width="300dp"
-        android:layout_height="80dp"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
         android:background="@drawable/patient_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintHorizontal_bias="0.53"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.907" />
+        app:layout_constraintVertical_bias="0.906" />
 
     <ImageView
         android:id="@+id/imageView2"
